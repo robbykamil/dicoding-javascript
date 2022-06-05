@@ -143,3 +143,42 @@
 
     */
 
+
+- Loop
+
+    /*
+
+    for(let i = 0; i <= 5; i++) {                   // for loop
+        console.log(i);                             // inisialisasi variable; test kondisi; perubahan nilai variable
+    }
+
+
+    let friends = ["Paul", "Deni", "Desi", "Rio"];
+    for(let friend of friends) {                    // for .. of loop
+        console.log(friend);                        
+    }
+
+
+    let i = 0;
+    while(i <= 5) {                                 // while loop
+        console.log(i);
+        i++
+    }
+
+
+    let j = 1;
+    do {                                            // do .. while loop
+        console.log(i);
+        i++
+    } while(i <= 5);
+
+
+    //my practical
+    for(left = 1; left <= 6; left++) {
+        for(right = 1; right <= left; right++) {
+          console.log(`[ ${left} | ${right} ]`);
+        }
+    }
+
+    */
+    
