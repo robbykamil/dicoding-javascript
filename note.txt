@@ -62,3 +62,84 @@
     console.log(id1==id2);    //output = false, "Symbol" Data Types umumnya digunakan sebagai nama property dari Object
 
     */
+
+
+- Operator
+
+    /*
+
+    x = y;   //assignment operator
+    x += y;
+
+
+    let num1 = 10
+    let var1 = "10"
+    console.log(num1 == var1);   //output = true
+    console.log(num1 === var1);  //output = false
+
+
+    let myNumber = 20;
+    let yourNumber = 25;
+    let otherNumber = 30;
+    console.log(myNumber < yourNumber && otherNumber > yourNumber);  // (true && true) -> true
+    console.log(myNumber < yourNumber || otherNumber = yourNumber);  // (true || false) -> false
+    console.log(!(myNumber = 20);                                    // !(true) -> false
+
+    */
+
+
+- If/Else Statement
+
+    /*
+
+    const isCar = Mercedez;
+    let carColor = null;
+    if (isCar === "BMW") {
+        carColor = "Black";
+    } else if (isCar === "Jaguar") {
+        carColor = "Blue";
+    } else if (isCar === "Mercedez") {
+        carColor = "Silver";
+    } else {
+        carColor = "White";
+    }
+
+
+    const isResident = false;
+    let scholarship = isResident ? "You are not Eligible" : "You are Eligible";  // this is conditional expressions
+    console.log(scholarship);                                                    // condition ? true expressions : false expressions
+
+
+    const newStudent = "";                                 // Di Javascript ada yang disebut "truthy" dan "falsy".
+    if (newStudent) {                                      // Ketika menuliskan expression yang tidak mengembalikan boolean,
+        console.log("Hello, ${name}!);                     // hukum "truthy" dan "falsy" berlaku.
+    } else {
+        console.log("There's no a new student");           // output = There's no a new student
+    }
+
+    */
+
+
+- Switch Case Statement
+
+    /*
+
+    const isCar = Mercedez;
+    let carColor = null;
+
+    switch (isCar) {
+        case "BMW":
+            carColor = "Black";
+            break;
+        case "Jaguar":
+            carColor = "Blue";
+            break;
+        case "Mercedez":
+            carColor = "Silver";
+            break;
+        default:
+            carColor = "White";
+    }
+
+    */
+
