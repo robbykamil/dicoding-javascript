@@ -1,0 +1,64 @@
+#1 Fundamental JavaScript
+
+- Expression = the code that have a value
+               5; 2+3;
+- Statement = instructions for do something, ex. make a variable, loops, checking conditions, etc
+              var myName; const phi; int age;
+              
+    /*
+    let firstName;                //statement or declaration statement
+    firstName = "Robby Kamil";    //assignment expression
+
+
+    let lastName = "Siregar";
+    const birthday = "18 Januari 1888";   //const cannot change a value of variable
+    */
+
+
+- Data Types
+
+    /*
+    let x;
+    console.log(typeof(x));  //output = undefined
+
+
+    let angka = 10;
+    let desimal = 17.34;
+    console.log(typeof(angka));      //output = number
+    console.log(typeof(desimal));    //output = number
+    //the power of (**)
+
+
+    let endIncrement = 10;
+    console.log(endIncrement++);    //output = 10
+    console.log(endIncrement);      //output = 11
+    let frontIncrement = 20;
+    console.log(++frontIncrement);  //output = 21
+
+
+    let numberBigInt = 50n + 5n;
+    console.log(numberBigInt);  //output = 55n, this is BigInt data types
+
+
+    const answer = '"I think it\'s awesome!" he answered confidently';   //escape string using backslash (\)
+
+
+    const nameStudent = "Robby";
+    console.log(`Please Welcome to New Student, ${nameStudent}.`)  //string interpolation used backticks (`) to used string template
+
+
+    const number1 = 10;
+    const number2 = 12;
+    let isGreater = number1 > number2;
+    console.log(isGreater);             //boolean, output = false
+
+
+    let dataSementara = null;
+    console.log(dataSementara);  //output = null, digunakan ketika membuat variable namun belum memastikan tipe data apa yang pas digunakan
+
+
+    const id1 = Symbol("id");
+    const id2 = Symbol("id");
+    console.log(id1==id2);    //output = false, "Symbol" Data Types umumnya digunakan sebagai nama property dari Object
+
+    */
