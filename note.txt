@@ -1,8 +1,8 @@
-#1 Fundamental JavaScript
+#1 FUNDAMENTAL JAVASCRIPT
 
-- Expression = the code that have a value
+- EXPRESSION = the code that have a value
                5; 2+3;
-- Statement = instructions for do something, ex. make a variable, loops, checking conditions, etc
+- STATEMENT = instructions for do something, ex. make a variable, loops, checking conditions, etc
               var myName; const phi; int age;
               
     /*
@@ -15,7 +15,7 @@
     */
 
 
-- Data Types
+- DATA TYPES
 
     /*
     let x;
@@ -64,7 +64,7 @@
     */
 
 
-- Operator
+- OPERATOR
 
     /*
 
@@ -88,7 +88,7 @@
     */
 
 
-- If/Else Statement
+- IF/ELSE STATEMENT
 
     /*
 
@@ -120,7 +120,7 @@
     */
 
 
-- Switch Case Statement
+- SWITCH CASE STATEMENT
 
     /*
 
@@ -144,7 +144,7 @@
     */
 
 
-- Loop
+- LOOP
 
     /*
 
@@ -171,6 +171,30 @@
         console.log(i);
         i++
     } while(i <= 5);
+
+#2 DATA STRUCTURE (Javascript data types that can saved more complex data structure : Object, Array, Map, Set)
+
+- OBJECT
+
+    /*
+    let user = {};  // data type of object
+
+
+
+    const myProfile = {
+      myName: "Ayatul Kamilah",
+      age: 20,
+      "student country": "Qatar",                              // used "" for a key that have a space
+    };
+
+    console.log(`A new student name is ${myProfile.myName}`);  // access a property of object
+    myProfile["student country"] = "Malaysia";                 // change a value of key, that used ("")
+    myProfile.city = "Sabah";                                  // if key is not found, it will added as new part of property
+    delete myProfile.age;                                      // use DELETE keyword for delete a key and value
+
+    console.log(myProfile);
+
+    */
 
 
     //my practical
