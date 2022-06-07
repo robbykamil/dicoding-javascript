@@ -171,6 +171,17 @@
         console.log(i);
         i++
     } while(i <= 5);
+    
+    
+    //my practical
+    for(left = 1; left <= 6; left++) {
+        for(right = 1; right <= left; right++) {
+          console.log(`[ ${left} | ${right} ]`);
+        }
+    }
+
+    */
+    
 
 #2 DATA STRUCTURE (Javascript data types that can saved more complex data structure : Object, Array, Map, Set)
 
@@ -196,13 +207,3 @@
 
     */
 
-
-    //my practical
-    for(left = 1; left <= 6; left++) {
-        for(right = 1; right <= left; right++) {
-          console.log(`[ ${left} | ${right} ]`);
-        }
-    }
-
-    */
-    
