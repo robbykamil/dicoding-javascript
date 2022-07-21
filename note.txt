@@ -255,3 +255,70 @@
     console.log(HP);
 
     */
+
+
+#2 FUNCTION
+	
+    /*
+
+    function minimal(a,b) {
+        if(a < b || a === b) {
+      return a;
+        } else if(b < a) {
+      return b;
+        } 
+    }
+
+    function power(a,b) {
+        return a**b;
+    }
+
+    */
+
+#3 OBJECT-ORIENTED PROGRAMMING (OOP)
+
+- CLASS
+
+    /* 
+    ~Concept of Class~
+    class = cafe
+    karakter = pembeli, penjual, pesanan
+    kemampuan = pesan menu, menerima pesanan
+    */
+
+
+    /*
+    ~Class with function syntac~
+    function order() {
+        this.menu1 = "Pizza";
+        this.menu2 = "Pasta";
+    };
+
+    order.prototype.processOrder = function n(customer,queue) {
+        console.log(`Cust Name : ${customer}\nQueue ${queue}`);
+        console.log(`Your ${this.menu2} order is Being Process`);
+    };
+
+    const newOrder = new order();
+    newOrder.processOrder("Abdul", 23);
+    */
+
+
+    /*
+    ~ Class Syntac ~
+    class order {
+        constructor() {
+      this.menu1 = "Pizza";
+      this.menu2 = "Pasta";
+        };
+
+        processOrder(customer, queue) {
+      console.log(`Cust Name: ${customer}\nQueue ${queue}`);
+      console.log(`Your ${this.menu2} order is Being Process`);
+        };
+    }
+
+    const newOrder = new order();
+    newOrder.processOrder("Abdul", 25);
+    */
+
