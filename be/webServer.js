@@ -11,6 +11,7 @@ const requestListener = (req, res) => {
         if(method === 'GET') {
             res.statusCode = 200;
             res.end('<h3>Homepage GET Response</h3>')
+            //curl -X GET http://localhost:5000 -i
         } else {
             res.statusCode = 400;
             res.end(`Halaman Tidak Dapat Menerima ${method} request`)
@@ -20,6 +21,7 @@ const requestListener = (req, res) => {
         if(method === 'GET') {
             res.statusCode = 200;
             res.end('<h3>About GET Response</h3>')
+            //curl -X GET http://localhost:5000/about -i
         } else if(method === 'POST') {
             let body = [];
             
@@ -32,6 +34,7 @@ const requestListener = (req, res) => {
                 const {user} = JSON.parse(body);
                 res.statusCode = 200;
                 res.end(`Hi, ${user}! This is About POST Response`)
+                // curl -X POST -H "Content-Type: application/json" http://localhost:5000/free -d "{\"user\": \"...\", \"param2\": \"...\"}" -i
             })
         } else {
             res.statusCode = 400;
