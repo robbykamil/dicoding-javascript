@@ -4,23 +4,31 @@ import http from 'http';
 //callback function
 const requestListener = (req, res) => {
     // MIME (Multipurpose Internet Mail Extensions) types
-    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('X-Powered-By', 'NodeJS');
 
     const {method, url} = req;
+    
     if(url === '/') {
         if(method === 'GET') {
             res.statusCode = 200;
-            res.end('<h3>Homepage GET Response</h3>')
+            res.end(JSON.stringify({
+                message: `Homepage ${method} Response`,
+            }))
             //curl -X GET http://localhost:5000 -i
         } else {
             res.statusCode = 400;
-            res.end(`Halaman Tidak Dapat Menerima ${method} request`)
+            res.end(JSON.stringify({
+                message: `Halaman Tidak Dapat Menerima ${method} request`,
+            }))
         }
         
     } else if(url === '/about') {
         if(method === 'GET') {
             res.statusCode = 200;
-            res.end('<h3>About GET Response</h3>')
+            res.end(JSON.stringify({
+                message: `About ${method} Response`
+            }))
             //curl -X GET http://localhost:5000/about -i
         } else if(method === 'POST') {
             let body = [];
@@ -33,23 +41,23 @@ const requestListener = (req, res) => {
                 body = Buffer.concat(body).toString()
                 const {user} = JSON.parse(body);
                 res.statusCode = 200;
-                res.end(`Hi, ${user}! This is About POST Response`)
+                res.end(JSON.stringify({
+                    message: `Hi, ${user}! This is About POST Response`,
+                }))
                 // curl -X POST -H "Content-Type: application/json" http://localhost:5000/free -d "{\"user\": \"...\", \"param2\": \"...\"}" -i
             })
         } else {
             res.statusCode = 400;
-            res.end(`Halaman Tidak Dapat Menerima ${method} request`)
+            res.end(JSON.stringify({
+                message: `Halaman Tidak Dapat Menerima ${method} request`,
+            }))
         }
     } else {
         res.statusCode = 404;
-        res.end('Halaman Tidak Ditemukan')
+        res.end(JSON.stringify({
+            message: `Halaman Tidak Ditemukan`,
+        }))
     }
-    
-    /**
-     * if(method === 'PUT') {
-        res.end('<h3>PUT Response</h3>')
-        }
-     */
 };
 
 const server = http.createServer(requestListener);
